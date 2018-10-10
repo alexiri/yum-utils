@@ -352,7 +352,7 @@ def main():
                     else:
                         my.logger.warning('Removing %s due to failed signature check: %s' % rpmfn)
                     os.unlink(pkg.localpath)
-                    exit_code = 1
+                    exit_code = 2
                     continue
 
     my.closeRpmDB()
